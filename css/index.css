@@ -25,3 +25,255 @@
     font-size: 22px;
     text-align: right;
 }
+
+/*main*/
+.main{
+    padding-top: 60px;
+}
+#content{
+    height: 610px;
+    background: #ccc;
+}
+
+#date{
+    position: relative;
+    width: 100%;
+    background: #f4f4f4;
+    /*padding: 0 18.75%;*/
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+.date-left{
+    position: relative;
+    float: left;
+    width: 18.86458333%;  /*247px*/
+    /*min-height: 350px;*/
+    background: white;
+    text-align: left;
+    box-sizing: border-box;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+
+}
+.date-left>ul>li{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 0.66667rem;  /*16px*/
+    height: 2rem;  /*70px*/
+    line-height: 2rem;  /*70px*/
+    border-bottom: 1px solid #ccc;
+    /*文字出现省略号*/
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.date-left>ul>li>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #000;
+}
+.date-left>ul>li>a:hover{
+    color: #6cb7ca;
+    cursor: pointer;
+
+}
+.date-left>ul>li:hover{
+    -webkit-border-radius:8px 2px ;
+    -moz-border-radius:8px 2px;
+    border-radius:8px 2px;
+    -webkit-box-shadow:
+            0 -1px 1px rgba(0,0,0,.2),
+            -1px 0 1px rgba(0,0,0,.2),
+            0 1px 1px rgba(0,0,0,.2);
+    -moz-box-shadow:
+            0 -1px 1px rgba(0,0,0,.2),
+            -1px 0 1px rgba(0,0,0,.2),
+            0 1px 1px rgba(0,0,0,.2);
+    box-shadow:
+            0 -1px 1px rgba(0,0,0,.2),
+            -1px 0 1px rgba(0,0,0,.2),
+            0 1px 1px rgba(0,0,0,.2);
+}
+.date-left>ul>li:nth-child(1){
+    font-size: 1rem;  /*16px*/
+    background: #6cb7ca;
+    color: white;
+    /*font-weight: bold;*/
+    letter-spacing: 0.416667rem;
+    text-align: justify-all;
+    padding: 0;
+    -webkit-border-radius: 8px 8px 0 0;
+    -moz-border-radius: 8px 8px 0 0;
+    border-radius: 8px 8px 0 0;
+}
+.date-left>ul>li:nth-child(1):hover{
+    cursor: text;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.date-left>ul>li img{
+    max-height: 18px;
+    margin-right: 4%;
+}
+
+/*右边的表格部分*/
+.date-right{
+    position: relative;
+    float: right;
+    width: 80.375%;  /*1620px*/
+    /*min-height: 350px;*/
+    min-height: 100%;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+.date-right>header{
+    position: relative;
+    width: 100%;
+    height: 2rem;  /*48px*/
+    line-height: 2rem;  /*48px*/
+    background: #6cb7ca;
+    color: white;
+    box-sizing: border-box;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.hea-left{
+    float: left;
+    margin-left: 0.416667rem;  /*10px*/
+    letter-spacing: 0.2rem;  /*10px*/
+    font-size: 1rem;
+}
+.hea-right{
+    position: absolute;
+    float: right;
+    top: 50%;
+    right: 0;
+    -webkit-transform: translate(0,-50%);
+    -moz-transform: translate(0,-50%);
+    -ms-transform: translate(0,-50%);
+    -o-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+    border: 1px solid white;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    border-radius: .5rem;
+    padding: 0.083333rem 0.416667rem;  /*2px,10px*/
+    margin-right:  0.416667rem;/*10px;*/
+}
+
+#successInp,#successBtn{
+    color: white;
+    background: none;
+    height: 1rem;
+    float: right;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+#successBtn{
+    width: 1rem;
+    background: url("../images/public/search.png") no-repeat left top;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+/*输入框字体颜色*/
+#successInp::-webkit-input-placeholder{
+    color: white;
+}  /*谷歌*/
+#successInp::-moz-placeholder{
+    color: white;
+}  /*火狐19+*/
+#successInp:-moz-placeholder{
+    color: white;
+}  /*火狐14-18*/
+#successInp:-ms-input-placeholder{
+    color: white;
+}  /*IE10*/
+/*表格*/
+#tab{
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 48px;
+}
+#tab a{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+#tab tr,td{
+    height: 35px;
+    line-height: 35px;
+    border-bottom: 1px solid #ccc;
+    font-size: 0.6rem;
+    /*white-space: nowrap;*/
+
+}
+#tab th{
+    font-weight: bold;
+    font-size: 0.66667rem;
+    /*文字不换行*/
+    /*white-space: nowrap;*/
+}
+#tab tr:nth-child(1){
+    text-align: left;
+    border-top: 1px solid #ccc;
+}
+#tab tr>th:nth-child(1){
+    width: 2rem;
+}
+#tab tr>td:nth-child(1),#tab tr>th:nth-child(1),tr>th:nth-child(n+3),#tab tr>td:nth-child(n+3){
+    text-align: center;
+}
+#tab tr>td:nth-child(2){
+    text-align: justify;
+}
+/*分页*/
+.content-rightBottom{
+    position: absolute;
+    padding: .4rem 0;
+    background-color: #6cb7ca;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+#barcon{
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+#barcon a,#barcon span{
+    display: inline-block;
+    margin-left: 2px;
+    border: 1px solid white;
+    min-width: 1.25rem;  /*30px*/
+    color: white;
+    font-size: 0.66667rem;
+    padding: 0.2083333rem;  /*5px*/
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-decoration: none;
+    /*禁止文字被选中*/
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#barcon a:hover,#barcon span:hover{
+    color: black;
+    cursor: pointer;
+}
+#barcon>a.action{
+    background: rgba(123, 210, 232, 0.5);
+}

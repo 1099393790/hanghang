@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="./css/public.css">
     <!--js-->
     <script src="./js/jquery-1.12.1.min.js"></script>
+    <script src="./js/publicFunction.js"></script>
     <script src="./js/index.js"></script>
 </head>
 <body>
@@ -42,7 +43,118 @@
                 </div>
             </div>
         </div>
-        <div class="main"></div>
+        <div class="main">
+            <div class="inner_c" id="content">
+                <div id="date" class="clearfix">
+                    <div class="date-left">
+                        <ul>
+                            <li class="clearfix">
+                                <span>行业规范</span>
+                            </li>
+                            <li>
+                                <a href="#caption">
+                                    <img src="./images/norm/1.png" alt="水运">
+                                    <!--                                <span>水运规范&nbsp; &nbsp;>></span>-->
+                                    <span>水运规范</span>
+                                </a>
+                                <div id="date-hidden-nav" class="date-hidden-nav">
+                                    <ul>
+                                        <li>1.综合类</li>
+                                        |
+                                        <li>2.勘测类</li>
+                                        |
+                                        <li>3.地基与基础类</li>
+                                        |
+                                        <li>4.混凝土类</li>
+                                        |
+                                        <li>5.港口类</li>
+                                        |
+                                        <li>6.航道与通航建筑物类</li>
+                                        |
+                                        <li>7.修造船水工建筑物类</li>
+                                        |
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#caption">
+                                    <img src="./images/norm/2.png" alt="水利">
+                                    <!--                                <span>水利规范&nbsp; &nbsp;>></span>-->
+                                    <span>水利规范</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#caption">
+                                    <img src="./images/norm/3.png" alt="铁路">
+                                    <!--                                <span>铁路规范&nbsp; &nbsp;>></span>-->
+                                    <span>铁路规范</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#caption">
+                                    <img src="./images/norm/4.png" alt="电力">
+                                    <!--                                <span>电力规范&nbsp; &nbsp;>></span>-->
+                                    <span>电力规范</span>
+                                </a>
+                                <div class="date-hidden-nav">
+                                    <ul>
+                                        <li>1.风力发电</li>
+                                        |
+                                        <li>2.火力发电</li>
+                                        |
+                                        <li>3.输变电工程</li>
+                                        |
+                                        <li>4.水力发电</li>
+                                        |
+                                        <li>5.通用规范</li>
+                                        |
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#caption">
+                                    <img src="./images/norm/5.png" alt="路桥">
+                                    <span>路桥规范</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#caption">
+                                    <img src="./images/norm/6.png" alt="民航">
+                                    <span>民航规范</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#caption">
+                                    <img src="./images/norm/7.png" alt="建材">
+                                    <span>建材规范</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="date-right" id="date-right">
+                        <header class="clearfix">
+                            <div class="hea-left" id="caption">水运工程规范</div>
+                            <div class="hea-right" id="search">
+                                <button id="successBtn"></button>
+                                <input aria-label="Search" id="successInp" placeholder="请输入关键字" type="search">
+                            </div>
+                        </header>
+                        <table id="tab">
+                            <tr>
+                                <th>序号</th>
+                                <th>标准名称</th>
+                                <th>PDF查看/下载</th>
+                                <th>PDF下载</th>
+                            </tr>
+                        </table>
+                        <!--分页-->
+                        <div class="content-rightBottom" id="paging">
+                            <div id="barcon"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="footer clearfix">
             <div class="foot__left">
                 <a href="#">联系我们</a>
