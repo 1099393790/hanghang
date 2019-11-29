@@ -1,0 +1,21 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'TengXiang';
+    font-display: swap;
+    src: url('../fonts/TengXiang/TTXiChaoYuanJ.eot'); /* IE9 */
+    src: url('../fonts/TengXiang/TTXiChaoYuanJ.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/TengXiang/TTXiChaoYuanJ.woff2') format('woff2'),
+    url('../fonts/TengXiang/TTXiChaoYuanJ.woff') format('woff'), /* chrome、firefox */
+    url('../fonts/TengXiang/TTXiChaoYuanJ.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../fonts/TengXiang/TTXiChaoYuanJ.svg#TTXiChaoYuanJ') format('svg'); /* iOS 4.1- */
+}
+/*腾翔细潮圆简*/
+.TengXiang {
+    font-family: "TengXiang", serif !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
