@@ -61,19 +61,21 @@ table {
     width: 1200px;
     margin: 0 auto;
 }
-
+html{
+    font-size: 24px;
+}
 html,body{
     width: 100%;
     height: 100%;
     min-height: 100%;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 .warp{
     position: relative;
     box-sizing: border-box;
     padding-bottom: 70px;
     width: 100%;
-    height: 100%;
+    min-height: 100%;
 }
 .footer{
     position: absolute;
@@ -92,12 +94,13 @@ html,body{
     -ms-transform: translate(0, -50%);
     -o-transform: translate(0, -50%);
     transform: translate(0, -50%);
-    width: 4em;
+    width: 3rem;
 }
 .footer .foot__left>a{
     color: black;
     text-decoration: none;
     line-height: 24px;
+    font-size: 16px;
 }
 .footer .foot__left>a:hover{
     text-decoration: underline;
@@ -110,6 +113,7 @@ html,body{
     text-align: center;
     letter-spacing: 1px;
     line-height: 24px;
+    font-size: 16px;
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -131,9 +135,59 @@ html,body{
     text-align: center;
     letter-spacing: 1px;
     line-height: 24px;
+    font-size: 16px;
     -webkit-transform: translate(0, -50%);
     -moz-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
     -o-transform: translate(0, -50%);
     transform: translate(0, -50%);
+}
+
+/*媒体查询*/
+@media screen and (max-width: 1300px) {
+    .inner_c{
+        width: 95%;
+    }
+}
+@media screen and (max-width: 768px){
+    #hide-bottomNav{
+        display: block;
+    }
+    .date-left,#tab tr>th:nth-child(4),#tab tr>td:nth-child(4){
+        display: none;
+    }
+    #tab tr>th:nth-child(3){
+        width: 87px;
+    }
+    .date-right{
+        width: 100%;
+    }
+    footer[class="clearfix"]{
+        margin-bottom: 48px;
+    }
+}
+@media screen and (max-width: 414px){
+    html{
+        font-size: 18px;
+    }
+    #tab tr th{
+        text-align: center;
+    }
+    /*#carousel-inner img{*/
+    /*    min-height: 100px;*/
+    /*}*/
+}
+@media screen and (max-width: 375px){
+    html{
+        font-size: 16px;
+    }
+    #tab tr td, #tab tr th{
+        font-size: 10px;
+    }
+    #caption{
+        letter-spacing: 4px;
+    }
+    #successInp{
+        width: 100px;
+    }
 }
