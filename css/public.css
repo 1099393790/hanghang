@@ -83,3 +83,57 @@ html,body{
     height: 70px;
     background: #609ba9;
 }
+.footer .foot__left{
+    position: absolute;
+    top: 50%;
+    left: 70px;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    width: 4em;
+}
+.footer .foot__left>a{
+    color: black;
+    text-decoration: none;
+    line-height: 24px;
+}
+.footer .foot__left>a:hover{
+    text-decoration: underline;
+}
+.footer .foot__cen{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30%;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 24px;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+}
+.footer .foot__right{
+    position: absolute;
+    top: 50%;
+    right: 70px;
+    box-sizing: border-box;
+    padding-left: 60px;
+    padding-top: 6px;
+    width: 200px;
+    height: 60px;
+    background: url("../images/public/QRcode.jpg") left center no-repeat;
+    background-size: contain;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 24px;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
