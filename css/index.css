@@ -1,1 +1,27 @@
 @charset "UTF-8";
+
+/*header*/
+.header{
+    width: 100%;
+}
+.header .logoarea{
+    height: 63px;
+    background: #63a1b0;
+}
+.header .logoarea p{
+    line-height: 63px;
+    font-size: 41px;
+    color: white;
+}
+.header .logoarea p>span{
+    font-size: 22px;
+}
+.header .banner{
+    height: 63px;
+    background: #dcdddc;
+}
+.header .banner p{
+    line-height: 63px;
+    font-size: 22px;
+    text-align: right;
+}
