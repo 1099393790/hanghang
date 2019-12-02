@@ -8,19 +8,19 @@
     background: #63a1b0;
 }
 .header .logoarea p{
-    line-height: 63px;
-    font-size: 41px;
+    line-height: 83px;
+    font-size: 72px;
     color: white;
 }
 .header .logoarea p>span{
-    font-size: 22px;
+    font-size: 0.4166em;
 }
 .header .banner{
     background: #dcdddc;
 }
 .header .banner p{
     line-height: 63px;
-    font-size: 22px;
+    font-size: 1rem;
     text-align: right;
 }
 
@@ -326,4 +326,13 @@
 }
 #hide-bottomNav>ul>li img{
     max-height: 24px;
+}
+
+@media screen and (max-width: 600px){
+    .header .logoarea p{
+        font-size: 40px;
+    }
+    .header .banner p{
+        line-height: 40px;
+    }
 }
